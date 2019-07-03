@@ -35,7 +35,7 @@ public class CustomerService {
 
     public void printReport(){
         report.stream()
-                  .sorted()
+                .sorted()
                 .map(s -> String.format("___________________________________%n%s", s))
                 .forEach(System.out::println);
         System.out.printf("%nCustomer number %d is the current serving customer.%n", customerLine.servingCustomer());
